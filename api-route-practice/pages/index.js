@@ -29,9 +29,7 @@ export default function Home() {
   };
 
   const loadAcconts = () => {
-    fetch("api/account", {
-      method: "GET",
-    })
+    fetch("api/account")
       .then((response) => response.json())
       .then((data) => setAccounts(data.accounts));
   };
